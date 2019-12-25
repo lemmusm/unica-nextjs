@@ -35,7 +35,7 @@ const Styles = styled.div`
     position: relative;
   }
   .dropdown-item {
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: bold;
     &:hover {
       color: #ff7964 !important;
