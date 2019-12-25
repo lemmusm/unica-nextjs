@@ -12,6 +12,9 @@ const FooterInfo = styled.div`
     font-size: 1.5em;
     margin: 0.3em auto;
   }
+  p {
+    margin-bottom: 0 !important;
+  }
 `;
 
 const FooterComponent = styled.div`
@@ -27,6 +30,15 @@ const FooterComponent = styled.div`
     &:hover {
       color: #3b5a9b;
     }
+  }
+  .footerBottom {
+    background: #34495e;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  .footerLabel {
+    margin: 0 auto !important;
   }
 `;
 const BoxInfo = styled.div`
@@ -47,6 +59,9 @@ const TitleInfo = styled(Title)`
   color: #2c3e50;
   font-size: 1em;
 `;
+
+/* Get actual year */
+const year = new Date().getFullYear();
 
 const Footer = () => (
   <div>
@@ -115,6 +130,11 @@ const Footer = () => (
           </Col>
         </Row>
       </Container>
+      <Row>
+        <Col className='footerBottom' xs={12} md={12} lg={12}>
+          <p className='footerLabel'>© {year} UNI-CA Clínica Ambulatoria </p>
+        </Col>
+      </Row>
     </FooterComponent>
   </div>
 );
