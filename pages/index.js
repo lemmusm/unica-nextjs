@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../static/css/main.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import Layout from './Layout';

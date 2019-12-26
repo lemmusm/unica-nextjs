@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Container, Navbar } from 'react-bootstrap';
 import logoImage from '../static/img/logo.png';
+import Menu from './Menu';
 
 const Styles = styled.div`
   .navbar {
@@ -60,35 +60,7 @@ const Header = () => (
           <img src={logoImage} alt='logo_unica' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse className='justify-content-end' id='basic-navbar-nav'>
-          <Nav>
-            <Link href='/'>
-              <a className='nav-link'>INICIO</a>
-            </Link>
-            <Link href='/instalaciones'>
-              <a className='nav-link'>INSTALACIONES</a>
-            </Link>
-            <Link href='/pacientes'>
-              <a className='nav-link'>INFORMACIÓN A PACIENTES</a>
-            </Link>
-            <NavDropdown
-              title='CONSULTA DE ESPECIALIDADES'
-              id='basic-nav-dropdown'
-            >
-              <Link href='/clinica'>
-                <a className='dropdown-item'>CLÍNICA</a>
-              </Link>
-              <Link href='/comodin'>
-                <a className='dropdown-item'>
-                  FARMACOS Y ARTÍCULOS MÉDICOS DE HERIDAS
-                </a>
-              </Link>
-            </NavDropdown>
-            <Link href='/contacto'>
-              <a className='nav-link'>CONTACTO</a>
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
+        <Menu />
       </Container>
     </Navbar>
   </Styles>
