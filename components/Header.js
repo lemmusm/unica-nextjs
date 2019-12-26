@@ -4,6 +4,8 @@ import logoImage from '../static/img/logo.png';
 import Menu from './Menu';
 
 const Styles = styled.div`
+  margin-bottom: 78px;
+
   .navbar {
     background-color: white;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
@@ -54,7 +56,7 @@ const Styles = styled.div`
 
 const Header = () => (
   <Styles>
-    <Navbar sticky='top' expand='lg'>
+    <Navbar fixed='top' expand='lg'>
       <Container>
         <Navbar.Brand>
           <img src={logoImage} alt='logo_unica' />
