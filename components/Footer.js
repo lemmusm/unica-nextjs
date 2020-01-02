@@ -41,6 +41,7 @@ const FooterComponent = styled.div`
     margin: 0 auto !important;
   }
 `;
+
 const BoxInfo = styled.div`
   display: inline-block;
   margin: 1em auto;
