@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import { Container, Navbar } from 'react-bootstrap';
 import logoImage from '../static/img/logo.png';
@@ -59,7 +60,11 @@ const Header = () => (
     <Navbar fixed='top' expand='lg'>
       <Container>
         <Navbar.Brand>
-          <img src={logoImage} alt='logo_unica' />
+          <Link href='/'>
+            <a className='nav-link'>
+              <img src={logoImage} alt='logo_unica' />
+            </a>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Menu />
