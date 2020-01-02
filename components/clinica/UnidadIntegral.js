@@ -1,5 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const UnidadIntegralSection = styled.div`
   ul > li {
@@ -36,7 +38,7 @@ const UnidadIntegral = () => (
       <Row>
         <Col className='mt-3 mb-3' xs={12} md={12} lg={12}>
           <SmallTitle>
-            {/* <FontAwesomeIcon className="icons" icon={faAngleDoubleRight} /> */}
+            <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
             EVALUACIÓN CLÍNICA DEL PIE:
           </SmallTitle>
           <ul>
@@ -50,20 +52,13 @@ const UnidadIntegral = () => (
                 Glucosa, colesterol, triglicéridos, hemoglobina glicosilada,
                 biometría hemática y química clínica.
               </p>
-              {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.evaluacion_pie}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
             </li>
           </ul>
         </Col>
 
         <Col xs={12} md={12} lg={12}>
           <SmallTitle>
-            {/* <FontAwesomeIcon className="icons" icon={faAngleDoubleRight} /> */}
+            <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
             ESTUDIOS COMPLEMENTARIOS:
           </SmallTitle>
           <p className='font-weight-normal mt-3'>
@@ -81,15 +76,6 @@ const UnidadIntegral = () => (
             deambulación o marcha, localizando los puntos de mayor presión y con
             riesgo de ulceración
           </p>
-          {/* <Gallery
-                                        className="gallery"
-                                        images={
-                                          this.state.estudios_complementarios
-                                        }
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
 
           <p className='font-weight-bold mt-3'>Estudio SCANFEET (AMFIT):</p>
           <p className='font-weight-normal'>
@@ -98,14 +84,6 @@ const UnidadIntegral = () => (
             información en tiempo real al momento de la deambulación y así
             realizar la plantilla u ortesís ideal para cada paciente.
           </p>
-
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.scannfeet}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
 
           <p className='font-weight-bold mt-3'>
             Estudios de baropodografia digital (Equipo F-Scan):
@@ -117,53 +95,22 @@ const UnidadIntegral = () => (
             realizadas en la plantilla.
           </p>
 
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.baropodografiaOne}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
-
           <p className='font-weight-normal'>
             {' '}
             Estudio con plantillas personalizadas comprobando objetivamente la
             descarga en los puntos de mayor presión (zonas rojas).
           </p>
 
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.baropodografiaTwo}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
           <p className='font-italic font-weight-light'>
             Primer imagen con plantillas personalizadas, segunda imagen previó
             al uso de plantillas.
           </p>
-
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.baropodografiaThree}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
 
           <p className='font-italic font-weight-light'>
             Objetivamente se verifica la descarga en zonas de alto riesgo de
             ulceración. Las gráficas nos apoyan en el estudio de la marcha y la
             adecuada descarga en el pie.
           </p>
-
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.baropodografiaFour}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
 
           <p className='font-italic font-weight-light'>
             Imagenes en 3D valorando el pico de presión en la zona de interés.
@@ -179,14 +126,6 @@ const UnidadIntegral = () => (
             manejo para esta patología.
           </p>
 
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.lab_vascular}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
-
           <p className='font-weight-bold mt-3'>
             Doppler de flujo e índice tobillo-brazo:
           </p>
@@ -194,14 +133,6 @@ const UnidadIntegral = () => (
             Utilizado para valorar el flujo arterial en el pie y su grado de
             obstrucción.
           </p>
-
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.doppler}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
 
           <p className='font-weight-bold mt-3'>
             Tensión percutanea de tensión percutánea de oxígeno (Periflux 6000):
@@ -233,14 +164,6 @@ const UnidadIntegral = () => (
             y el nivel de obstrucción. Indispensable para la planeación de una
             revascularización distal.
           </p>
-
-          {/* <Gallery
-                                        className="gallery"
-                                        images={this.state.angiografía}
-                                        enableMasonry
-                                        gutterInPercent={gutterInPercent}
-                                        columnsMaxCount={columnsMaxCount}
-                                      ></Gallery> */}
         </Col>
       </Row>
     </Container>

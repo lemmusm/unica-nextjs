@@ -1,4 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 const LaroscopicaPage = styled.div`
@@ -30,7 +32,7 @@ const Laroscopica = () => (
         </Col>
         <Col xs={12} md={6} lg={6}>
           <SmallTitle>
-            {/* <FontAwesomeIcon className="icons" icon={faAngleDoubleRight} /> */}
+            <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
             Hernioplastía:
           </SmallTitle>
           <p>
@@ -41,7 +43,7 @@ const Laroscopica = () => (
         </Col>
         <Col xs={12} md={6} lg={6}>
           <SmallTitle>
-            {/* <FontAwesomeIcon className="icons" icon={faAngleDoubleRight} /> */}
+            <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
             Colecistectomía:
           </SmallTitle>
           <p>

@@ -1,4 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 const EspecialidadPage = styled.div`
@@ -24,28 +26,52 @@ const Especialidad = () => (
         <Col xs={12} md={12} lg={12}></Col>
         <ul>
           <li>
-            <SmallTitle>Medicina interna</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Medicina interna
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Medicina de rehabilitación</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Medicina de rehabilitación
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Traumatología</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Traumatología
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Infectología</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Infectología
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Rehabilitación física</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Rehabilitación física
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Laboratorio de análisis clínico</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Laboratorio de análisis clínico
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Rayos X</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Rayos X
+            </SmallTitle>
           </li>
           <li>
-            <SmallTitle>Podología</SmallTitle>
+            <SmallTitle>
+              <FontAwesomeIcon className='icons' icon={faAngleDoubleRight} />
+              Podología
+            </SmallTitle>
           </li>
         </ul>
       </Row>
