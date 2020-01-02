@@ -90,6 +90,9 @@ const Index = () => (
         </Col>
         <Col xs={12} md={12} lg={6} className='portada'></Col>
       </Row>
+      <div className='go-down scroll'>
+        <div className='icon-scroll'></div>
+      </div>
 
       <Container className='mb-5'>
         <Row className='mt-5'>
